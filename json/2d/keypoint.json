@@ -1,0 +1,250 @@
+[
+    {
+        "type": "include",
+        "file": "pcl/2d/edge.h"
+    },
+    {
+        "type": "namespace",
+        "name": "pcl",
+        "members": [
+            {
+                "type": "class",
+                "line": 48,
+                "meta": {},
+                "template": {
+                    "arguments": [
+                        {
+                            "typeParameterKey": "typename",
+                            "name": "ImageType"
+                        }
+                    ]
+                },
+                "isstruct": false,
+                "name": "Keypoint",
+                "members": [
+                    {
+                        "type": "function",
+                        "macro": "TFUNC",
+                        "line": 58,
+                        "meta": {},
+                        "access": "public",
+                        "returnType": {
+                            "type": "literal",
+                            "name": "void"
+                        },
+                        "name": "harrisCorner",
+                        "arguments": [
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "output"
+                            },
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "input"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "sigma_d"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "sigma_i"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "alpha"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "thresh"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "function",
+                        "macro": "TFUNC",
+                        "line": 67,
+                        "meta": {},
+                        "access": "public",
+                        "returnType": {
+                            "type": "literal",
+                            "name": "void"
+                        },
+                        "name": "hessianBlob",
+                        "arguments": [
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "output"
+                            },
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "input"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "sigma"
+                            },
+                            {
+                                "type": {
+                                    "type": "literal",
+                                    "name": "bool"
+                                },
+                                "name": "SCALE"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "function",
+                        "macro": "TFUNC",
+                        "line": 71,
+                        "meta": {},
+                        "access": "public",
+                        "returnType": {
+                            "type": "literal",
+                            "name": "void"
+                        },
+                        "name": "hessianBlob",
+                        "arguments": [
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "output"
+                            },
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "input"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "start_scale"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "float"
+                                },
+                                "name": "scaling_factor"
+                            },
+                            {
+                                "type": {
+                                    "const": true,
+                                    "type": "literal",
+                                    "name": "int"
+                                },
+                                "name": "num_scales"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "function",
+                        "macro": "TFUNC",
+                        "line": 79,
+                        "meta": {},
+                        "access": "public",
+                        "returnType": {
+                            "type": "literal",
+                            "name": "void"
+                        },
+                        "name": "imageElementMultiply",
+                        "arguments": [
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "output"
+                            },
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "input1"
+                            },
+                            {
+                                "type": {
+                                    "type": "reference",
+                                    "baseType": {
+                                        "type": "literal",
+                                        "name": "ImageType"
+                                    }
+                                },
+                                "name": "input2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "include",
+        "file": "pcl/2d/impl/keypoint.hpp"
+    }
+]
